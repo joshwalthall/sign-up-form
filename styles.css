@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "ubuntu";
+    src:
+        url("fonts/ubuntu-regular-webfont.woff"),
+        url("fonts/ubuntu-regular-webfont.woff2");
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src:
+        url("fonts/ubuntu-bold-webfont.woff"),
+        url("fonts/ubuntu-bold-webfont.woff2");
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src:
+        url("fonts/ubuntu-italic-webfont.woff"),
+        url("fonts/kanit-italic-webfont.woff2");
+    font-weight: normal;
+    font-style: italic;
+}
+
+div {
+    font: 1em "ubuntu"
+}
