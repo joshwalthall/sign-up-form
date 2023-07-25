@@ -1,3 +1,14 @@
+:root {
+    --main-bg-color: #F8F7F2;
+    --logo-color: white;
+    --logo-bg-color: rgba(0, 0, 0, 0.6);
+    --main-text-color: #2C2C2A;
+    --highlight-color: #8497EE;
+    --pop-color: #FB7E14;
+    --button-hover-color: ;
+    --button-active-color: ;
+}
+
 @font-face {
     font-family: "ubuntu";
     src:
@@ -80,9 +91,9 @@ body {
 .logo-container {
     width: 100%;
     position: absolute;
-    top: 25vh;
+    top: 13vh;
     padding: 1rem 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--logo-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +105,7 @@ body {
 }
 
 #logo-text {
-    color: white;
+    color: var(--logo-color);
     font: 3.5rem "kanit";
 }
 
@@ -102,4 +113,22 @@ body {
     height: max(50rem, 100vh);
     margin: 0;
     padding: 0;
+    z-index: -1;
+}
+
+.photo-credit-container {
+    position: absolute;
+    width: 100%;
+    bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-credit-container a {
+    color: var(--pop-color);
+}
+
+#photo-credit {
+    color: var(--logo-color);
+    font-size: 0.8rem;
 }
