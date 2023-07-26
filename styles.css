@@ -5,8 +5,9 @@
     --main-text-color: #2C2C2A;
     --highlight-color: #8497EE;
     --pop-color: #FB7E14;
-    --button-hover-color: ;
-    --button-active-color: ;
+    --button-hover-color: #D6711C;
+    --button-active-color: #FF9C48;
+    --font-size-L: 1.3rem;
 }
 
 @font-face {
@@ -70,6 +71,7 @@ body {
 }
 
 .page-container {
+    background-color: var(--main-bg-color);
     display: flex;
 }
 
@@ -84,19 +86,37 @@ body {
 }
 
 .right-container {
-    width: 60vw;
-    flex: 3 1 auto;
+    align-self: center;
+    width: 100%;
 }
 
 .logo-container {
     width: 100%;
     position: absolute;
-    top: 13vh;
-    padding: 1rem 0;
+    top: 12vh;
     background-color: var(--logo-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.intro-container,
+.form-container,
+.create-container {
+    padding-left: 2rem;
+}
+
+.intro-container {
+    padding-bottom: 2rem;
+}
+
+.form-container {
+    background-color: white;
+    width: 100%;
+}
+
+.form-title {
+    padding: 2rem 0;
 }
 
 #logo-image {
@@ -131,4 +151,10 @@ body {
 #photo-credit {
     color: var(--logo-color);
     font-size: 0.8rem;
+}
+
+.form-title,
+#intro-text {
+    font-size: var(--font-size-L);
+    font-weight: 700;
 }
