@@ -1,13 +1,15 @@
 :root {
     --main-bg-color: #F8F7F2;
     --logo-color: white;
-    --logo-bg-color: rgba(0, 0, 0, 0.6);
+    --logo-bg-color: rgba(0, 0, 0, 0.5);
     --main-text-color: #2C2C2A;
     --highlight-color: #8497EE;
+    --field-border-color: #EAEAEA;
     --pop-color: #FB7E14;
     --button-hover-color: #D6711C;
     --button-active-color: #FF9C48;
-    --font-size-L: 1.3rem;
+    --font-size-l: 1.3rem;
+    --font-size-s: 0.8rem;
 }
 
 @font-face {
@@ -78,7 +80,7 @@ body {
 .left-container {
     position: relative;
     min-width: 30rem;
-    max-width: 60rem;
+    max-width: 30vw;
     height: 100vh;
     margin: 0;
     flex: 1 1 1;
@@ -87,7 +89,9 @@ body {
 
 .right-container {
     align-self: center;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .logo-container {
@@ -106,17 +110,35 @@ body {
     padding-left: 2rem;
 }
 
-.intro-container {
-    padding-bottom: 2rem;
-}
-
 .form-container {
     background-color: white;
     width: 100%;
+    padding-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    border: 1px solid var(--field-border-color);
 }
 
 .form-title {
     padding: 2rem 0;
+}
+
+.form-row {
+    display: flex;
+    gap: 3rem;
+}
+
+.field-container {
+    font-size: var(--font-size-s);
+    display: flex;
+    flex-direction: column;
 }
 
 #logo-image {
@@ -130,7 +152,7 @@ body {
 }
 
 #background-image {
-    height: max(50rem, 100vh);
+    height: 100vh;
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -145,7 +167,7 @@ body {
 }
 
 .photo-credit-container a {
-    color: var(--pop-color);
+    color: white;
 }
 
 #photo-credit {
@@ -155,6 +177,6 @@ body {
 
 .form-title,
 #intro-text {
-    font-size: var(--font-size-L);
+    font-size: var(--font-size-l);
     font-weight: 700;
 }
