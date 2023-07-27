@@ -88,9 +88,11 @@ body {
 }
 
 .right-container {
+    width: 100vw;
     align-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 2rem;
 }
 
@@ -114,6 +116,8 @@ body {
     background-color: white;
     width: 100%;
     padding-bottom: 2rem;
+    box-shadow: 0px 5px 5px lightgray;
+    border-top: 0.1rem solid rgb(240, 240, 240);
 }
 
 form {
@@ -124,6 +128,14 @@ form {
 
 input {
     border: 1px solid var(--field-border-color);
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    margin-top: 0.25rem;
+}
+
+input:focus {
+    outline: 0.1rem solid var(--highlight-color);
+    box-shadow: 3px 3px 3px lightgray ;
 }
 
 .form-title {
@@ -139,6 +151,10 @@ input {
     font-size: var(--font-size-s);
     display: flex;
     flex-direction: column;
+}
+
+.req-star {
+    color: crimson;
 }
 
 #logo-image {
