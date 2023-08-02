@@ -197,6 +197,12 @@ input:focus {
     font-weight: 700;
 }
 
+#password-message {
+    color: crimson;
+    font-size: var(--font-size-s);
+    margin: 0;
+}
+
 .create-container a {
     color: var(--pop-color);
     font-weight: 700;
@@ -230,4 +236,8 @@ input:focus {
 
 #create-button:active {
     background-color: var(--button-active-color);
+}
+
+#create-button:disabled {
+    background-color: lightgray;
 }
